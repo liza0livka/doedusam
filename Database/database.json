@@ -1,0 +1,696 @@
+{
+  "manufacturers": [
+    {
+      "manufacturer": "Profix",
+      "date_added": "2017-10-02",
+      "id": "af48"
+    },
+    {
+      "manufacturer": "Pierburg",
+      "date_added": "2017-01-10",
+      "id": "6c29"
+    },
+    {
+      "manufacturer": "Honda",
+      "date_added": "2016-06-12",
+      "id": "dceb"
+    },
+    {
+      "manufacturer": "Benson",
+      "date_added": "2015-04-09",
+      "id": "b102"
+    },
+    {
+      "manufacturer": "Mazda",
+      "date_added": "2018-01-23",
+      "id": "d4f6"
+    },
+    {
+      "manufacturer": "Zekkert",
+      "date_added": "2018-03-08",
+      "id": "f344"
+    },
+    {
+      "manufacturer": "Ferodo",
+      "date_added": "2015-08-11",
+      "id": "d061"
+    },
+    {
+      "manufacturer": "Lemforder",
+      "date_added": "2016-11-15",
+      "id": "3e17"
+    },
+    {
+      "manufacturer": "Toyota",
+      "date_added": "2016-06-03",
+      "id": "0e5b"
+    },
+    {
+      "manufacturer": "Automega",
+      "date_added": "2016-07-01",
+      "id": "2d89"
+    },
+    {
+      "manufacturer": "Magneti Marelli",
+      "date_added": "2017-05-27",
+      "id": "093a"
+    },
+    {
+      "manufacturer": "Nissan",
+      "date_added": "2015-01-21",
+      "id": "bcd2"
+    },
+    {
+      "manufacturer": "Airline",
+      "date_added": "2016-03-26",
+      "id": "427e"
+    },
+    {
+      "manufacturer": "BILSTEIN",
+      "date_added": "2018-03-06",
+      "id": "e02c"
+    },
+    {
+      "manufacturer": "Petro-Canada",
+      "date_added": "2017-03-22",
+      "id": "f90a"
+    },
+    {
+      "manufacturer": "Bendix",
+      "date_added": "2015-04-25",
+      "id": "aacb"
+    },
+    {
+      "manufacturer": "Mercedes",
+      "date_added": "2016-03-16",
+      "id": "f402"
+    },
+    {
+      "manufacturer": "Mitsubishi",
+      "date_added": "2017-04-23",
+      "id": "6e23"
+    },
+    {
+      "manufacturer": "Motul",
+      "date_added": "2018-01-07",
+      "id": "cfa7"
+    },
+    {
+      "manufacturer": "Shell",
+      "date_added": "2016-11-14",
+      "id": "5acd"
+    },
+    {
+      "manufacturer": "Liqui Moly",
+      "date_added": "2015-03-24",
+      "id": "a53b"
+    },
+    {
+      "manufacturer": "Mando",
+      "date_added": "2015-03-24",
+      "id": "737d"
+    },
+    {
+      "manufacturer": "LUK",
+      "date_added": "2015-12-02",
+      "id": "f7ec"
+    },
+    {
+      "manufacturer": "76",
+      "date_added": "2017-02-03",
+      "id": "4931"
+    },
+    {
+      "manufacturer": "Kayaba",
+      "date_added": "2016-02-08",
+      "id": "9497"
+    },
+    {
+      "manufacturer": "Total",
+      "date_added": "2015-03-05",
+      "id": "188c"
+    },
+    {
+      "manufacturer": "ASHIKA",
+      "date_added": "2018-06-13",
+      "id": "ae59"
+    },
+    {
+      "manufacturer": "VAG",
+      "date_added": "2018-05-16",
+      "id": "b2f3"
+    },
+    {
+      "manufacturer": "King Bearings",
+      "date_added": "2016-09-12",
+      "id": "5964"
+    },
+    {
+      "manufacturer": "Castrol",
+      "date_added": "2015-04-16",
+      "id": "4090"
+    },
+    {
+      "manufacturer": "Hyundai/Kia",
+      "date_added": "2016-01-07",
+      "id": "6a36"
+    },
+    {
+      "manufacturer": "Opel",
+      "date_added": "2015-03-04",
+      "id": "e202"
+    },
+    {
+      "manufacturer": "Idemitsu",
+      "date_added": "2018-01-21",
+      "id": "f4e2"
+    },
+    {
+      "manufacturer": "Stels",
+      "date_added": "2017-05-16",
+      "id": "e502"
+    },
+    {
+      "manufacturer": "BOGE",
+      "date_added": "2016-01-18",
+      "id": "0a85"
+    },
+    {
+      "manufacturer": "Glaser",
+      "date_added": "2015-12-29",
+      "id": "c58b"
+    },
+    {
+      "manufacturer": "Goodyear",
+      "date_added": "2015-12-05",
+      "id": "6b76"
+    },
+    {
+      "manufacturer": "Suzuki",
+      "date_added": "2017-05-18",
+      "id": "70c8"
+    },
+    {
+      "manufacturer": "ZIMMERMANN",
+      "date_added": "2017-12-14",
+      "id": "f88d"
+    },
+    {
+      "manufacturer": "Mobil",
+      "date_added": "2016-10-24",
+      "id": "07c7"
+    },
+    {
+      "manufacturer": "OPTIMAL",
+      "date_added": "2016-08-19",
+      "id": "5130"
+    },
+    {
+      "manufacturer": "ZIC",
+      "date_added": "2015-02-07",
+      "id": "8afb"
+    },
+    {
+      "manufacturer": "Ford",
+      "date_added": "2016-10-12",
+      "id": "cbec"
+    },
+    {
+      "manufacturer": "General Motors",
+      "date_added": "2016-10-05",
+      "id": "608e"
+    },
+    {
+      "manufacturer": "KASHIYAMA",
+      "date_added": "2015-10-16",
+      "id": "4f2b"
+    },
+    {
+      "manufacturer": "ALСA",
+      "date_added": "2016-10-01",
+      "id": "173f"
+    },
+    {
+      "manufacturer": "Airtex",
+      "date_added": "2015-10-21",
+      "id": "b530"
+    },
+    {
+      "manufacturer": "Elf",
+      "date_added": "2016-10-16",
+      "id": "6199"
+    },
+    {
+      "manufacturer": "BOSCH",
+      "date_added": "2017-06-21",
+      "id": "12ce"
+    },
+    {
+      "manufacturer": "Lukoil",
+      "date_added": "2017-12-19",
+      "id": "0964"
+    }
+  ],
+  "productsale": [
+    {
+      "product": "Моторное масло Mobil 1 ESP 154285",
+      "quantity": 2,
+      "sale_datetime": "2019-02-22T15:30:53",
+      "id": "47af"
+    },
+    {
+      "product": "Моторное масло ENGINE OIL MZ 320756",
+      "quantity": 3,
+      "sale_datetime": "2019-11-20T17:05:24",
+      "id": "6012"
+    },
+    {
+      "product": "Моторное масло QUARTZ 9000 FUTURE NFC 171839",
+      "quantity": 1,
+      "sale_datetime": "2019-10-05T17:25:12",
+      "id": "82ad"
+    },
+    {
+      "product": "Моторное масло EDGE LL Titanium FST 15669A",
+      "quantity": 2,
+      "sale_datetime": "2019-10-06T15:45:52",
+      "id": "a0fd"
+    },
+    {
+      "product": "Моторное масло Top Tec 4600 8033",
+      "quantity": 1,
+      "sale_datetime": "2019-02-11T18:18:45",
+      "id": "e3d3"
+    },
+    {
+      "product": "Моторное масло ENGINE OIL 08880-80375-GO",
+      "quantity": 2,
+      "sale_datetime": "2019-11-03T19:48:14",
+      "id": "6e41"
+    },
+    {
+      "product": "Жилет светоотражающий взрослый ARW-AV-02",
+      "quantity": 3,
+      "sale_datetime": "2019-08-25T09:14:40",
+      "id": "9655"
+    },
+    {
+      "product": "Моторное масло Super 3000 X1 152567",
+      "quantity": 2,
+      "sale_datetime": "2019-04-08T19:12:39",
+      "id": "19cc"
+    },
+    {
+      "product": "Моторное масло Motor Oil KE900-90032-R",
+      "quantity": 3,
+      "sale_datetime": "2019-10-07T18:30:53",
+      "id": "483c"
+    },
+    {
+      "product": "Моторное масло Premium LF Gasoline 05100-00451",
+      "quantity": 2,
+      "sale_datetime": "2019-12-30T13:56:10",
+      "id": "2be5"
+    },
+    {
+      "product": "Моторное масло ENGINE OIL MZ 320757",
+      "quantity": 2,
+      "sale_datetime": "2019-07-23T13:22:18",
+      "id": "1df7"
+    },
+    {
+      "product": "Моторное масло Dexos 2 93165556",
+      "quantity": 1,
+      "sale_datetime": "2019-05-08T16:32:17",
+      "id": "6bae"
+    },
+    {
+      "product": "Моторное масло Evolution 900 SXR 194877",
+      "quantity": 1,
+      "sale_datetime": "2019-02-25T18:40:43",
+      "id": "71a1"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "product_name": "Моторное масло Motor Oil KE900-90042-R",
+      "main_image": "Database/car_service_products/8FE07916.jpg",
+      "manufacturer": "Nissan",
+      "is_active": true,
+      "price": "2060 руб."
+    },
+    {
+      "id": "2",
+      "product_name": "Моторное масло Helix Ultra 550046361",
+      "main_image": "Database/car_service_products/F310E078.jpg",
+      "manufacturer": "Shell",
+      "is_active": true,
+      "price": "2120"
+    },
+    {
+      "id": "3",
+      "product_name": "Моторное масло Super 3000 X1 152566",
+      "main_image": "Database/car_service_products/6CA0BE73.jpg",
+      "manufacturer": "Mobil",
+      "is_active": false,
+      "price": "1820 рублей"
+    },
+    {
+      "id": "4",
+      "product_name": "Моторное масло Turbo SYN Gasoline 05100-00441",
+      "main_image": "Database/car_service_products/2B009062.jpg",
+      "manufacturer": "Hyundai/Kia",
+      "is_active": true,
+      "price": "1870 рублей"
+    },
+    {
+      "id": "5",
+      "product_name": "Моторное масло Dexos 2 95599405",
+      "main_image": "Database/car_service_products/AD00B713.jpg",
+      "manufacturer": "General Motors",
+      "is_active": true,
+      "price": "1410₽"
+    },
+    {
+      "id": "6",
+      "product_name": "Моторное масло Molygen New Generation 9054",
+      "main_image": "Database/car_service_products/0DF0A8A4.jpg",
+      "manufacturer": "Liqui Moly",
+      "is_active": true,
+      "price": "2670"
+    },
+    {
+      "id": "7",
+      "product_name": "Моторное масло Top Tec 4600 8033",
+      "main_image": "Database/car_service_products/B790A6AA.jpg",
+      "manufacturer": "Liqui Moly",
+      "is_active": false,
+      "price": "2580 руб."
+    },
+    {
+      "id": "8",
+      "product_name": "Моторное масло ENGINE OIL 08880-80375-GO",
+      "main_image": "Database/car_service_products/CC40C869.jpg",
+      "manufacturer": "Toyota",
+      "is_active": false,
+      "price": "2710₽"
+    },
+    {
+      "id": "9",
+      "product_name": "Моторное масло Mobil 1 ESP 154285",
+      "main_image": "Database/car_service_products/F490E078.jpg",
+      "manufacturer": "Mobil",
+      "is_active": true,
+      "price": "2890 руб."
+    },
+    {
+      "id": "10",
+      "product_name": "Моторное масло Dexos 2 93165557",
+      "main_image": "Database/car_service_products/45908C52.jpg",
+      "manufacturer": "General Motors",
+      "is_active": true,
+      "price": "1500"
+    },
+    {
+      "id": "11",
+      "product_name": "Моторное масло Super 3000 X1 Diesel 152572",
+      "main_image": "Database/car_service_products/B0A0C186.jpg",
+      "manufacturer": "Mobil",
+      "is_active": true,
+      "price": "1870 рублей"
+    },
+    {
+      "id": "12",
+      "product_name": "Моторное масло ENGINE OIL MZ 320754",
+      "main_image": "Database/car_service_products/3B70C57C.jpg",
+      "manufacturer": "Mitsubishi",
+      "is_active": true,
+      "price": "2140 рублей"
+    },
+    {
+      "id": "13",
+      "product_name": "Моторное масло Genesis Armortech 3148675",
+      "main_image": "Database/car_service_products/C9C0F036.jpg",
+      "manufacturer": "Lukoil",
+      "is_active": false,
+      "price": "1660 рублей"
+    },
+    {
+      "id": "14",
+      "product_name": "Моторное масло Optimal Synth 3926",
+      "main_image": "Database/car_service_products/EFC05011.jpg",
+      "manufacturer": "Liqui Moly",
+      "is_active": true,
+      "price": "1880"
+    },
+    {
+      "id": "15",
+      "product_name": "Моторное масло Optimal Synth 2293",
+      "main_image": "Database/car_service_products/C310B9F3.jpg",
+      "manufacturer": "Liqui Moly",
+      "is_active": true,
+      "price": "2520 рублей"
+    },
+    {
+      "id": "16",
+      "product_name": "Моторное масло Evolution 900 SXR 194878",
+      "main_image": "Database/car_service_products/E320BB7C.jpg",
+      "manufacturer": "Elf",
+      "is_active": true,
+      "price": "2010 руб."
+    },
+    {
+      "id": "17",
+      "product_name": "Моторное масло Special C G 055 167 M4",
+      "main_image": "Database/car_service_products/6730A31C.jpg",
+      "manufacturer": "VAG",
+      "is_active": true,
+      "price": "4720"
+    },
+    {
+      "id": "18",
+      "product_name": "Моторное масло Longlife III G 052 195 M2",
+      "main_image": "Database/car_service_products/E5507A37.jpg",
+      "manufacturer": "VAG",
+      "is_active": true,
+      "price": "1910 рублей"
+    },
+    {
+      "id": "19",
+      "product_name": "Моторное масло Special Tec LL 8055",
+      "main_image": "Database/car_service_products/B590AA7B.jpg",
+      "manufacturer": "Liqui Moly",
+      "is_active": false,
+      "price": "2420"
+    },
+    {
+      "id": "20",
+      "product_name": "Моторное масло Dexos 2 19 42 002",
+      "main_image": "Database/car_service_products/23F0848B.jpg",
+      "manufacturer": "Opel",
+      "is_active": true,
+      "price": "1300"
+    },
+    {
+      "id": "21",
+      "product_name": "Моторное масло Gasoline Fully- Synthetic 30021326-746",
+      "main_image": "Database/car_service_products/27B0C883.jpg",
+      "manufacturer": "Idemitsu",
+      "is_active": true,
+      "price": "1650 рублей"
+    },
+    {
+      "id": "22",
+      "product_name": "Моторное масло Formula F 15595E",
+      "main_image": "Database/car_service_products/5250C855.jpg",
+      "manufacturer": "Ford",
+      "is_active": false,
+      "price": "1750 руб."
+    },
+    {
+      "id": "23",
+      "product_name": "Моторное масло Zepro Euro Spec SN/CF 1849-004",
+      "main_image": "Database/car_service_products/90D0B807.jpg",
+      "manufacturer": "Idemitsu",
+      "is_active": true,
+      "price": "2400 руб."
+    },
+    {
+      "id": "24",
+      "product_name": "Моторное масло SN 08880-10705",
+      "main_image": "Database/car_service_products/43909176.jpg",
+      "manufacturer": "Toyota",
+      "is_active": true,
+      "price": "2200₽"
+    },
+    {
+      "id": "25",
+      "product_name": "Моторное масло Motor Oil KE900-90042",
+      "main_image": "Database/car_service_products/90505D31.jpg",
+      "manufacturer": "Nissan",
+      "is_active": true,
+      "price": "2020 рублей"
+    },
+    {
+      "id": "26",
+      "product_name": "Моторное масло Evolution 900 SXR 194839",
+      "main_image": "Database/car_service_products/F8E0B138.jpg",
+      "manufacturer": "Elf",
+      "is_active": false,
+      "price": "2340 рублей"
+    },
+    {
+      "id": "27",
+      "product_name": "Моторное масло SN/GF-5 SN5W30C",
+      "main_image": "Database/car_service_products/5A30A7EE.jpg",
+      "manufacturer": "Profix",
+      "is_active": true,
+      "price": "1550 рублей"
+    },
+    {
+      "id": "28",
+      "product_name": "Моторное масло Evolution 900 SXR 194877",
+      "main_image": "Database/car_service_products/E3A0B18A.jpg",
+      "manufacturer": "Elf",
+      "is_active": true,
+      "price": "2470"
+    },
+    {
+      "id": "29",
+      "product_name": "Трос буксировочный 12 тонн 54384",
+      "main_image": "Database/car_service_products/9750DA76.jpg",
+      "manufacturer": "Stels",
+      "is_active": true,
+      "price": "410 рублей"
+    },
+    {
+      "id": "30",
+      "product_name": "Моторное масло Molygen New Generation 9042",
+      "main_image": "Database/car_service_products/0D60A8A4.jpg",
+      "manufacturer": "Liqui Moly",
+      "is_active": true,
+      "price": "2510 рублей"
+    },
+    {
+      "id": "31",
+      "product_name": "Моторное масло QUARTZ INEO ECS 166252",
+      "main_image": "Database/car_service_products/D0D08F32.jpg",
+      "manufacturer": "Total",
+      "is_active": true,
+      "price": "1600 руб."
+    },
+    {
+      "id": "32",
+      "product_name": "Моторное масло Motor Oil KE900-90032-R",
+      "main_image": "Database/car_service_products/54B0795D.jpg",
+      "manufacturer": "Nissan",
+      "is_active": true,
+      "price": "1450 руб."
+    },
+    {
+      "id": "33",
+      "product_name": "Моторное масло Original oil Ultra 8300-77-992",
+      "main_image": "Database/car_service_products/EF80D790.jpg",
+      "manufacturer": "Mazda",
+      "is_active": false,
+      "price": "2770"
+    },
+    {
+      "id": "34",
+      "product_name": "Моторное масло Longlife III G 052 195 M4",
+      "main_image": "Database/car_service_products/D9605006.jpg",
+      "manufacturer": "VAG",
+      "is_active": true,
+      "price": "4100 рублей"
+    },
+    {
+      "id": "35",
+      "product_name": "Моторное масло 8100 X-CESS 102870",
+      "main_image": "Database/car_service_products/E9308929.jpg",
+      "manufacturer": "Motul",
+      "is_active": true,
+      "price": "3190 руб."
+    },
+    {
+      "id": "36",
+      "product_name": "Моторное масло Magnatec A5 15583D",
+      "main_image": "Database/car_service_products/9380C1E7.jpg",
+      "manufacturer": "Castrol",
+      "is_active": true,
+      "price": "2220₽"
+    },
+    {
+      "id": "37",
+      "product_name": "Щетка для снега со съемным скребком GY000202",
+      "main_image": "Database/car_service_products/3760D73F.jpg",
+      "manufacturer": "Goodyear",
+      "is_active": true,
+      "price": "350 руб."
+    },
+    {
+      "id": "38",
+      "product_name": "Моторное масло Magnatec A3/B4 156E9E",
+      "main_image": "Database/car_service_products/92C0C1E7.jpg",
+      "manufacturer": "Castrol",
+      "is_active": true,
+      "price": "2130 руб."
+    },
+    {
+      "id": "39",
+      "product_name": "Моторное масло Dexos 2 19 42 000",
+      "main_image": "Database/car_service_products/2390848B.jpg",
+      "manufacturer": "Opel",
+      "is_active": true,
+      "price": "1410 рублей"
+    },
+    {
+      "id": "40",
+      "product_name": "Моторное масло QUARTZ 9000 FUTURE NFC 171839",
+      "main_image": "Database/car_service_products/D2508F32.jpg",
+      "manufacturer": "Total",
+      "is_active": true,
+      "price": "1560 руб."
+    },
+    {
+      "id": "41",
+      "product_name": "Моторное масло Premium DPF Diesel 05200-00120",
+      "main_image": "Database/car_service_products/2D709062.jpg",
+      "manufacturer": "Hyundai/Kia",
+      "is_active": true,
+      "price": "1461 руб."
+    },
+    {
+      "id": "5681",
+      "product_name": "бебебе",
+      "main_image": "https://steamuserimages-a.akamaihd.net/ugc/958605370499381693/3C16418245B329D07B16E9DBD0D4690C5F207331/?imw=512&amp;imh=512&amp;ima=fit&amp;impolicy=Letterbox&amp;imcolor=%23000000&amp;letterbox=true",
+      "manufacturer": "Nissan",
+      "price": "773 руб.",
+      "is_active": false
+    },
+    {
+      "id": "586",
+      "product_name": "балбесы",
+      "main_image": "https://images.wallpaperscraft.ru/image/single/korzina_kotiata_para_72304_2560x1600.jpg",
+      "manufacturer": "Opel",
+      "price": "123 руб.",
+      "is_active": true
+    },
+    {
+      "id": "5682",
+      "product_name": "are you sure about that",
+      "main_image": "https://assets.vogue.com/photos/55c651ac08298d8be22600a8/master/w_2560%2Cc_limit/00170fullscreen.jpg",
+      "manufacturer": "Ford",
+      "price": "555 руб.",
+      "is_active": true
+    },
+    {
+      "id": "5683",
+      "product_name": "sashalyubimka",
+      "main_image": "https://avatars.mds.yandex.net/i?id=9fae024532cd8fc1376534a8f2dc3204_l-5232580-images-thumbs&ref=rim&n=13&w=2002&h=3000",
+      "manufacturer": "Hyundai/Kia",
+      "price": "111 руб.",
+      "is_active": true
+    }
+  ]
+}

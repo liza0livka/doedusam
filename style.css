@@ -1,0 +1,584 @@
+/* Основные переменные для темы и шрифтов */
+:root {
+  --main-bg-color: #FFF8E7; /* основной цвет фона */
+  --alt-bg-color: rgba(255, 255, 255, 0.954); /* альтернативный цвет фона */
+  --main-font-color: #000000; /* основной цвет шрифта */
+  --alt-font-color: rgba(0, 0, 0, 0.85); /* альтернативный цвет шрифта */
+  --alt-font-color-light: rgba(0, 0, 0, 0.68); /* более светлый альтернативный цвет шрифта */
+  --theme-primary: rgb(74, 199, 81); /* основной цвет темы */
+  --box-shadow: 2px 2px 7px -1px rgba(0, 0, 0, 0.75); /* тень для элементов */
+  --button-color: #FF8C00; /* цвет кнопок */
+  --button-hover-color: #FFB84D; /* цвет кнопок при наведении */
+  --border-color: #FF8C00; /* цвет границ элементов */
+}
+
+/* Стили для основного тела страницы */
+body {
+  background-color: var(--main-bg-color);
+  color: var(--main-font-color);
+  transition: background-color 0.3s, color 0.3s; /* плавный переход цветов */
+}
+
+/* Темная тема для сайта */
+body.dark-mode {
+  --main-bg-color: #353535;
+  --alt-bg-color: #1a1a1a;
+  --main-font-color: #000000;
+  --alt-font-color: rgba(255, 255, 255, 0.85);
+  background-color: var(--main-bg-color);
+  color: var(--main-font-color);
+}
+
+/* Стилизация заголовка с анимацией */
+header h1.animated-title {
+  font-size: 2.5rem; /* Увеличиваем размер заголовка */
+  font-weight: bold;
+  text-align: center;
+  margin: 2rem 0 1rem 0; /* Добавляем отступ сверху */
+  color: var(--button-color); /* Цвет заголовка */
+  animation: slideIn 3s infinite alternate; /* Анимация "покачивание" */
+}
+
+
+/* Анимация для заголовка "покачивание" */
+@keyframes slideIn {
+  from {
+    transform: translateX(-10px);
+  }
+  to {
+    transform: translateX(10px);
+  }
+}
+
+/* Стили кнопок с блестящим эффектом */
+.button {
+  position: relative;
+  padding: 0.5rem 1.5rem;
+  background: linear-gradient(45deg, var(--button-color), var(--button-hover-color));
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: background 0.3s, transform 0.1s;
+  box-shadow: 0px 4px 15px rgba(255, 140, 0, 0.5);
+}
+
+/* Анимированный блестящий эффект */
+.button::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0) 50%);
+  transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  transition: opacity 0.4s;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.button:hover {
+  background: linear-gradient(45deg, var(--button-hover-color), var(--button-color));
+}
+
+.button:hover::before {
+  opacity: 0.6;
+  animation: shiny-effect 1.5s infinite linear;
+}
+
+.button:active {
+  transform: scale(0.95); /* уменьшение при нажатии */
+}
+
+/* Анимация блестящего эффекта */
+@keyframes shiny-effect {
+  0% {
+    transform: translateX(-50%) translateY(-50%) rotate(45deg) scale(0);
+  }
+  50% {
+    transform: translateX(-50%) translateY(-50%) rotate(45deg) scale(1.5);
+  }
+  100% {
+    transform: translateX(150%) translateY(150%) rotate(45deg) scale(0);
+  }
+}
+
+/* Стилизация кнопки для переключения темы */
+.toggle-button {
+  margin: 10px;
+}
+
+/* Стили для блока фильтров и сортировки */
+.filters {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.filters input, .filters select {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 2px solid var(--border-color); /* оранжевая граница */
+  border-radius: 4px;
+  transition: border-color 0.3s;
+}
+
+.filters input:focus, .filters select:focus {
+  border-color: var(--button-color); /* усиление цвета границы при фокусе */
+  outline: none;
+}
+
+/* Стили для карточек товаров */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 1rem 0;
+  padding: 0;
+}
+
+.card {
+  flex: 0 1 calc(30% - 1em); /* Ширина карточки */
+  max-width: 280px; /* Максимальная ширина карточки */
+  margin: 1rem 0.5em;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: var(--box-shadow);
+  transition: background-color 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Центрируем содержимое по горизонтали */
+  text-align: center; /* Центрируем текст */
+  height: 330px; /* Фиксируем высоту всех карточек */
+  padding: 0.5rem; /* Добавляем отступы */
+  justify-content: space-between; /* Сдвигаем содержимое вниз */
+}
+
+/* Фиксированный размер для контейнера изображения */
+.card img {
+  width: 100%;
+  height: 180px; /* Фиксированная высота для всех изображений */
+  object-fit: contain; /* Масштабируем изображение внутри контейнера */
+  border-radius: 4px; /* Легкое закругление */
+  margin-bottom: auto; /* Оставляем пространство между изображением и текстом */
+}
+
+/* Заголовок и текст внутри карточки */
+.card h4 {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  text-align: center;
+}
+
+.card .description, .card .price {
+  font-size: 0.85rem;
+  color: var(--alt-font-color-light);
+  text-align: center;
+}
+
+.card .price {
+  font-weight: bold;
+  color: var(--theme-primary);
+  margin-bottom: 0.5rem;
+}
+
+/* Уменьшенные кнопки для карточек товаров */
+.card .button {
+  padding: 0.2rem 0.5rem;
+  font-size: 0.75rem;
+  border-radius: 4px;
+  transition: background-color 0.3s, transform 0.1s;
+  min-width: 50px;
+}
+
+/* Контейнер кнопок с уменьшенными отступами между кнопками */
+.card .button-container {
+  display: flex;
+  justify-content: center;
+  gap: 0.3rem; /* Уменьшаем расстояние между кнопками */
+  width: 100%;
+  align-items: center;
+  margin-top: auto; /* Перемещаем контейнер кнопок к низу карточки */
+  padding-bottom: 0.5rem; /* Отступ снизу */
+}
+
+
+.card .button:hover {
+  background-color: var(--button-hover-color);
+}
+
+.card .button:active {
+  transform: scale(0.95);
+}
+
+
+/* Контейнер кнопок для выравнивания по центру */
+.card .button-container {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem; /* Расстояние между кнопками */
+  margin-top: auto; /* Выталкиваем контейнер кнопок вниз */
+  padding-bottom: 0.5rem; /* Отступ снизу */
+}
+
+
+/* Стили для формы добавления товаров с более светлым фоном */
+/* Восстановление прежнего размера формы добавления товаров */
+.add-product-form {
+  position: fixed;
+  right: 20px;
+  bottom: 70px;
+  width: 220px; /* Вернули исходную ширину формы */
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 15px;
+  top: auto; /* Убрали отрицательное смещение */
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(255, 140, 0, 0.5);
+  z-index: 10;
+  border: 2px solid;
+  border-image: linear-gradient(45deg, #FF8C00, #FFB84D, #FF8C00);
+  border-image-slice: 1;
+  animation: borderAnimation 3s infinite linear;
+}
+
+
+/* Анимация для обводки формы */
+@keyframes borderAnimation {
+  0% {
+    border-image-source: linear-gradient(45deg, #FF8C00, #FFB84D, #FF8C00);
+  }
+  50% {
+    border-image-source: linear-gradient(45deg, #FFB84D, #FF8C00, #FFB84D);
+  }
+  100% {
+    border-image-source: linear-gradient(45deg, #FF8C00, #FFB84D, #FF8C00);
+  }
+}
+
+/* Стиль для полей ввода с оранжевой анимированной обводкой */
+.add-product-form input[type="text"],
+.add-product-form select {
+  width: 90%; /* Уменьшили ширину полей */
+  padding: 3px 5px;
+  font-size: 0.8rem;
+  color: var(--main-font-color);
+  background-color: #fff;
+  border: 1px solid;
+  border-image: linear-gradient(45deg, #FF8C00, #FFB84D, #FF8C00);
+  border-image-slice: 1;
+  border-radius: 4px;
+  margin-bottom: 6px;
+  transition: all 0.3s ease;
+  animation: borderAnimation 3s infinite linear;
+  outline: none;
+  height: 24px;
+}
+
+/* При фокусе добавляем эффект тени */
+.add-product-form input[type="text"]:focus,
+.add-product-form select:focus {
+  box-shadow: 0 0 5px rgba(255, 140, 0, 0.6); /* Оранжевая тень при фокусе */
+}
+
+/* Стили для кнопки добавления товара с блестящим эффектом */
+.add-product-form .button {
+  width: 96%; /* Уменьшили ширину кнопок */
+  margin-top: 5px;
+  padding: 0.4rem 0.8rem;
+  background: linear-gradient(45deg, var(--button-color), var(--button-hover-color));
+  color: #fff;
+  font-size: 0.8rem; /* Уменьшили размер шрифта кнопок */
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: background 0.3s, transform 0.1s;
+  box-shadow: 0px 4px 15px rgba(255, 140, 0, 0.5);
+}
+
+.add-product-form button::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0) 50%);
+  transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  transition: opacity 0.4s;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.add-product-form button:hover {
+  background: linear-gradient(45deg, var(--button-hover-color), var(--button-color));
+}
+
+.add-product-form button:hover::before {
+  opacity: 0.6;
+  animation: shiny-effect 1.5s infinite linear;
+}
+
+.add-product-form button:active {
+  transform: scale(0.95); /* уменьшение при нажатии */
+}
+
+.add-product-form.hidden {
+  display: none;
+}
+
+.add-product-form label {
+  display: block;
+  margin-bottom: 3px; /* Уменьшенный отступ для компактности */
+}
+
+/* Разместить галочку рядом с текстом "Активен" */
+.add-product-form label[for="active"] {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.add-product-form input {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.add-product-form input[type="checkbox"] {
+  vertical-align: middle;
+}
+
+.add-product-toggle {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background-color: var(--button-color);
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.1s;
+}
+
+.add-product-toggle:hover {
+  background-color: var(--button-hover-color);
+}
+
+.hidden {
+  display: none;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.add-product-form.hidden, .overlay.hidden {
+  display: none;
+}
+
+/* Основные стили */
+body {
+  background-color: var(--main-bg-color);
+  color: var(--main-font-color);
+}
+
+/* Стили стэк-панелей */
+.stack-panel {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  padding: 0 1rem;
+}
+
+.filter-label-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  background: linear-gradient(45deg, #FF8C00, #FFB84D);
+  background-clip: padding-box;
+  position: relative;
+}
+
+/* Переливающаяся обводка */
+.filter-label-container::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(45deg, #FFB84D, #FF8C00, #FFB84D);
+  z-index: -1;
+  border-radius: 10px;
+  animation: borderAnimation 3s infinite linear;
+}
+
+@keyframes borderAnimation {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+/* Стили выпадающих списков */
+.filter-select {
+  width: 200px;
+  padding: 5px;
+  font-size: 1rem;
+  border: 1px solid #FF8C00;
+  border-radius: 4px;
+}
+
+/* Стили для кнопки поиска */
+.search-container {
+  text-align: center;
+  margin: 0 1rem;
+}
+
+.search-input {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: 2px solid #FF8C00;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 250px;
+}
+
+/* Стиль для кнопки "Йооу" */
+.yo-button {
+  position: absolute;
+  top: 3rem; /* Расстояние от заголовка */
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #FF8C00;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  opacity: 0;
+  animation: none; /* Начальное состояние - без анимации */
+  z-index: 1000; /* Поверх остальных элементов */
+}
+
+@keyframes appear-zoom {
+  0% {
+      opacity: 0;
+      transform: scale(0.5);
+  }
+  50% {
+      opacity: 1;
+      transform: scale(1.2); /* Немного увеличиваем кнопку для эффекта приближения */
+  }
+  100% {
+      opacity: 1;
+      transform: scale(1); /* Кнопка в нормальном размере */
+  }
+}
+
+@keyframes disappear-zoom {
+  0% {
+      opacity: 1;
+      transform: scale(1);
+  }
+  100% {
+      opacity: 0;
+      transform: scale(0.5); /* Кнопка уменьшается, создавая эффект отдаления */
+  }
+}
+
+#yo-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: orange;
+  border: none;
+  border-radius: 8px;
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  z-index: 1000;
+}
+
+.show-bounce {
+  opacity: 1;
+  animation: appear-zoom 1s forwards, disappear-zoom 3s 1s forwards; /* Появление с задержкой перед исчезновением */
+}
+
+/* Серый фон для неактивных продуктов */
+.card.inactive {
+  background-color: #f0f0f0;
+  opacity: 0.6;
+}
+
+/* Стили для модального окна */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 400px;
+  max-width: 90%;
+}
+
+.modal .close-button {
+  margin-top: 15px;
+}
+
+.card-inner.history-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.history-list {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.history-list li {
+  font-size: 0.9em;
+  color: #555;
+}
+
